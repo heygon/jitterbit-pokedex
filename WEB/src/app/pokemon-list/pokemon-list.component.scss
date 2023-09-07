@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Pokemon;
+    src: url('../../assets/fonts/pokemon/Pokemon Solid.ttf')
+}
+
+
+#lista{
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
+    background: url(../../assets/img/cenario2.jpg) top center no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+.btnCarregarMais{
+    font-family: Pokemon;
+    color:#000;
+    letter-spacing: 5px;
+    font-size:40px;
+    border:solid 10px rgb(181, 181, 39);
+    background: #5c9eb8;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}

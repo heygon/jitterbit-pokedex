@@ -1,0 +1,21 @@
+<div id="cardPokemon">
+    <div class="flip-card-inner">
+        <div class="flip-card-front" [ngStyle]="getColor(type)">
+            <img [src]="pegarImagemPokemon(nome)" class="m-3 col-10"/>
+            <h5 class="title">{{nome}}</h5>
+        </div>
+        <ng-container *ngIf="nome !== 'Não encontrado'">
+            <div class="flip-card-back" [ngStyle]="getColor(type)">
+                
+                <div class="col-6 offset-3"><img [src]="pegarImagemPokemon(nome)" class="col-12"/></div>
+                <h5 class="title">{{nome}}</h5>
+                
+                <p>{{type}}</p>
+
+                <div class="col-12">
+                    <a href="pokemon-detail/{{nome}}" class="col-12 btnVermais">Mais detalhes</a>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
